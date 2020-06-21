@@ -1,0 +1,17 @@
+#idea类的模板
+#1、File-->settings-->Editor-->File and Code Templates-->Files
+#我们选择Class文件（当然你要设置接口的还也可以选择Interface文件）
+# https://blog.csdn.net/qushaming/article/details/96867190  //生成类和方法模板 注释
+/**类的模板
+ @Description
+ @author ${USER}
+ @date  ${TIME}
+*/
+
+* 方法模板
+* @Author $user$
+* @Description
+* @Date $Date$
+* @Param $param$
+* @return $return$
+**/

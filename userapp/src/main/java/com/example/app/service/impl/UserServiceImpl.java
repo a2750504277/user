@@ -14,7 +14,7 @@ import java.util.Map;
  */
 
 @Service
-public class userServiceImpl implements userService {
+public class UserServiceImpl implements userService {
 
    private static Map<Long,String> map =new HashMap<>();
 

@@ -9,9 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>coupon</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>coupon</name>
+    <artifactId>user</artifactId>
+    <version>0.0.1</version>
+    <name>user</name>
+    <packaging>pom</packaging>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -19,6 +20,41 @@
     </properties>
 
 
+
+    <repositories>
+        <repository>
+            <id>shopGroup</id>
+            <name>shopGroup repository</name>
+            <url>http://47.57.72.11:8081/nexus/content/groups/shopGroup/</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+
+    <pluginRepositories>
+            <pluginRepository>
+                <releases>
+                    <updatePolicy>never</updatePolicy>
+                </releases>
+                <snapshots>
+                    <enabled>false</enabled>
+                </snapshots>
+                <id>shopGroup</id>
+                <name>shopGroup repository</name>
+                <url>http://47.57.72.11:8081/nexus/content/groups/shopGroup/</url>
+            </pluginRepository>
+    </pluginRepositories>
+
+
+    <distributionManagement>
+        <repository>
+            <id>shop</id>
+            <url>http://47.57.72.11:8081/nexus/content/repositories/shop</url>
+        </repository>
+    </distributionManagement>
 
 
 </project>
