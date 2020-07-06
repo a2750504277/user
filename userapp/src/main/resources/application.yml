@@ -33,16 +33,13 @@ dubbo:
     retries: 0
     # 超时时间
     timeout: 3000
-  # 注册监控中心
-  monitor:
-    protocol: registry
-  config-center:
-    protocol: zookeeper
-    address: 47.57.72.11:3320
+
 #  metadata-report:
 #    # 注册中心协议
 #    protocol: zookeeper
 #    # 注册中心地址
 #    address: 127.0.0.1:2181
-
-
+spring:
+ main:
+   allow-bean-definition-overriding: true
+#spring.main.allow-bean-definition-overriding=true

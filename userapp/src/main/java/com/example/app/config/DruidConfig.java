@@ -14,7 +14,11 @@ import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ @Description
+ @author Administrator
+ @date  2020/6/24
+*/
 @Configuration
 public class DruidConfig {
 
@@ -36,10 +40,13 @@ public class DruidConfig {
                 ServletRegistrationBean();
         servletRegistrationBean.setServlet(new StatViewServlet());
         servletRegistrationBean.addUrlMappings("/druid/*");
-        Map<String, String> initParameters = new HashMap<>();
-        initParameters.put("loginUsername", userName);// ⽤户名
-        initParameters.put("loginPassword", password);// 密码
-        initParameters.put("resetEnable", "false");// 禁⽤HTML⻚⾯上   的“Reset All”功能
+        Map<String, String> initParameters = new HashMap<>(4);
+        //户名
+        initParameters.put("loginUsername", userName);
+        //密码
+        initParameters.put("loginPassword", password);
+        // 禁⽤HTML上   的“Reset All”功能
+        initParameters.put("resetEnable", "false");
 
         servletRegistrationBean.setInitParameters(initParameters);
         return servletRegistrationBean;

@@ -8,10 +8,12 @@
  @date  ${TIME}
 */
 
-* 方法模板
-* @Author $user$
-* @Description
-* @Date $Date$
-* @Param $param$
+方法模板
+* show 方法的简述.
+* <p>show 方法的详细说明第一行<br>
+* <p>show 方法的详细说明第二行<br>
+* @param $param$
 * @return $return$
-**/
+* @Author $user$
+ * @Date $Date$
+ */
