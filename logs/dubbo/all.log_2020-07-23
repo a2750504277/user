@@ -1,0 +1,2 @@
+2020-07-23 17:34:42 ERROR DruidAbstractDataSource:994 - maxIdle is deprecated
+2020-07-23 17:34:49  INFO DruidDataSource:848 - {dataSource-1} inited
